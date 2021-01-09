@@ -18,3 +18,15 @@ const getSortedUniqueSkills = array =>
     .reduce((usersSkills, item) => [...usersSkills, ...item.skills], [])
     .filter((skill, index, arr) => arr.indexOf(skill) === index)
     .sort();
+
+
+// const getSortedUniqueSkills = array =>
+//   array
+//     .reduce((usersSkills, item) => {
+//       user.skills.forEach(skill => {
+//         if (!usersSkills.includes(skill)) {
+//           usersSkills.push(skill);
+//        }
+//      })
+//       return usersSkills;
+//     }, []).sort();
